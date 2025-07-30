@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+import java.util.Scanner;
+
+public class DisplayNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        int intNum = scanner.nextInt();
+
+        
+        float floatNum = scanner.nextFloat();
+
+    
+        System.out.println(intNum);
+
+
+        System.out.printf("%.2f\n", floatNum);
+
+        scanner.close();
+    }
+}
