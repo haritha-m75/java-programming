@@ -1,0 +1,38 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+public class PanAmFlightSimple {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(); 
+        if (n <= 0) {
+            System.out.println("Invalid Input");
+            return;
+        }
+       int age = sc.nextInt(); 
+        if (age < 0) {
+            System.out.println("Invalid Input");
+            return;
+        }
+       int youngest = age;
+       int oldest = age;
+        for (int i = 1; i < n; i++) {
+            age = sc.nextInt();
+            if (age < 0) {
+                System.out.println("Invalid Input");
+                return;
+            }
+             if (age < youngest) {
+                youngest = age;
+            }
+            if (age > oldest) {
+                oldest = age;
+            }
+        }
+        System.out.println("Youngest=" + youngest);
+        System.out.println("Oldest=" + oldest);
+    }
+}
